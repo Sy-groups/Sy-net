@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "domains": "Domains",
+    "pricing": "Pricing",
+    "support": "Support"
+  },
+  "hero": {
+    "title": "Find Your Perfect Domain",
+    "subtitle": "Register premium domains with Sy-net. Fast, secure, and reliable domain registration services.",
+    "searchPlaceholder": "Enter your domain name...",
+    "searchButton": "Search Domain",
+    "popularExtensions": "Popular: .com, .net, .org, .sy"
+  },
+  "landing": {
+    "whyChooseUs": {
+      "title": "Why Choose Sy-net",
+      "subtitle": "Experience premium domain registration with unmatched service quality",
+      "fastRegistration": {
+        "title": "Lightning Fast",
+        "description": "Register your domain in under 60 seconds with our streamlined process"
+      },
+      "securePlatform": {
+        "title": "Bank-Level Security",
+        "description": "Your domains are protected with military-grade encryption and security"
+      },
+      "premiumSupport": {
+        "title": "24/7 Elite Support", 
+        "description": "Get instant help from our domain experts anytime, anywhere"
+      }
+    },
+    "reviews": {
+      "title": "What Our Clients Say",
+      "subtitle": "Join thousands of satisfied customers who trust Sy-net",
+      "review1": {
+        "text": "Sy-net made domain registration incredibly simple. Their support team is outstanding!",
+        "author": "Sarah Johnson",
+        "role": "Tech Entrepreneur"
+      },
+      "review2": {
+        "text": "The best domain registrar I've used. Fast, reliable, and professional service.",
+        "author": "Ahmed Al-Hassan",
+        "role": "Digital Agency Owner"
+      },
+      "review3": {
+        "text": "Premium quality service at competitive prices. Highly recommended!",
+        "author": "Maria Rodriguez",
+        "role": "E-commerce Manager"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about domain registration",
+      "q1": {
+        "question": "How long does domain registration take?",
+        "answer": "Most domains are registered instantly. In rare cases, it may take up to 24 hours for complete propagation."
+      },
+      "q2": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards, PayPal, and bank transfers in both EUR and SYP currencies."
+      },
+      "q3": {
+        "question": "Can I transfer my existing domain to Sy-net?",
+        "answer": "Yes! We offer free domain transfers with our competitive renewal rates and premium support."
+      },
+      "q4": {
+        "question": "Do you offer domain privacy protection?",
+        "answer": "Absolutely. We provide free WHOIS privacy protection with all domain registrations to keep your information secure."
+      }
+    },
+    "footer": {
+      "about": "Sy-net is Syria's premier domain registrar, providing fast, secure, and reliable domain registration services since 2020. We're committed to helping businesses establish their online presence with confidence.",
+      "links": {
+        "domains": "Browse Domains",
+        "pricing": "View Pricing", 
+        "support": "Get Support",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "contact": "Contact Us"
+      }
+    }
+  },
+  "search": {
+    "results": "Search Results",
+    "available": "Available",
+    "taken": "Taken",
+    "register": "Register",
+    "price": "Price",
+    "noResults": "No results found",
+    "searching": "Searching domains..."
+  },
+  "checkout": {
+    "title": "Complete Your Order",
+    "domain": "Domain",
+    "price": "Price",
+    "total": "Total",
+    "currency": "Currency",
+    "continue": "Continue to Payment",
+    "success": "Order completed successfully!"
+  },
+  "currency": {
+    "eur": "EUR",
+    "syp": "SYP"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try again",
+    "back": "Back",
+    "about": "About Us"
+  }
+}

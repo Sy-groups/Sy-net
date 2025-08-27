@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sy-net Domain Registrar - Luxury Design System
+   Color palette: Deep Red, Rich Purple, Gold, White - Premium/Expensive feel
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Luxury Brand Colors */
+    --luxury-red: 0 73% 27%;        /* Deep Red #8B0000 */
+    --luxury-purple: 271 81% 25%;   /* Rich Purple #4C1D95 */
+    --luxury-gold: 45 100% 65%;     /* Elegant Gold #FFD93D */
+    --luxury-white: 0 0% 100%;      /* Pure White */
+    --luxury-black: 0 0% 5%;        /* Rich Black */
+    
+    /* Main Design System */
+    --background: 0 0% 99%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 0 73% 27%;           /* Luxury Red */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 271 81% 25%;       /* Rich Purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 45 100% 65%;          /* Elegant Gold */
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 100%;
+    --ring: 0 73% 27%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--luxury-red)), hsl(var(--luxury-purple)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(45 100% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--luxury-red) / 0.05), hsl(var(--luxury-purple) / 0.05));
+    
+    /* Shadows */
+    --shadow-luxury: 0 20px 60px -10px hsl(var(--luxury-red) / 0.2);
+    --shadow-gold: 0 8px 30px -5px hsl(var(--luxury-gold) / 0.3);
+    --shadow-elegant: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 73% 35%;           /* Lighter Red for dark mode */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 271 81% 35%;       /* Lighter Purple for dark mode */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 45 100% 70%;          /* Brighter Gold for dark mode */
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 0 73% 35%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--luxury-red) / 0.1), hsl(var(--luxury-purple) / 0.1));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
