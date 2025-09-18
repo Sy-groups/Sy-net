@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu';
 import { Globe, DollarSign, Sun, Moon } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -19,28 +20,28 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-luxury rounded-lg flex items-center justify-center">
+            <Link to="/" className="w-10 h-10 bg-gradient-luxury rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">SN</span>
-            </div>
-            <span className="text-xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
+            </Link>
+            <Link to="/" className="text-xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
               Sy-net
-            </span>
+            </Link>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-smooth">
+            <Link to="/" className="text-foreground hover:text-primary transition-smooth">
               {t('nav.home')}
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link to="/domains" className="text-foreground hover:text-primary transition-smooth">
               {t('nav.domains')}
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link to="/pricing" className="text-foreground hover:text-primary transition-smooth">
               {t('nav.pricing')}
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link to="/support" className="text-foreground hover:text-primary transition-smooth">
               {t('nav.support')}
-            </a>
+            </Link>
           </div>
 
           {/* Controls */}
