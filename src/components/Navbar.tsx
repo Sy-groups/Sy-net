@@ -1,18 +1,19 @@
-import { useTranslation } from 'react-i18next';
-import { useApp, Language, Currency, Theme } from '@/contexts/AppContext';
-import { Button } from '@/components/ui/button';
-import { 
-  DropdownMenu, 
-  DropdownMenuContent, 
-  DropdownMenuItem, 
-  DropdownMenuTrigger 
-} from '@/components/ui/dropdown-menu';
-import { Globe, DollarSign, Sun, Moon } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+import { useApp, Language, Currency, Theme } from "@/contexts/AppContext";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Globe, DollarSign, Sun, Moon } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export function Navbar() {
   const { t } = useTranslation();
-  const { language, currency, theme, setLanguage, setCurrency, setTheme } = useApp();
+  const { language, currency, theme, setLanguage, setCurrency, setTheme } =
+    useApp();
 
   return (
     <nav className="bg-background/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -20,22 +21,40 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src="/sy-netlogo.png" alt="Logo" className="h-22 w-24" />
+            <Link to="/">
+              <img
+                src={`${import.meta.env.BASE_URL}sy-netlogo.png`}
+                alt="Logo"
+                className="h-22 w-24"
+              />
+            </Link>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-smooth">
-              {t('nav.home')}
+            <Link
+              to="/"
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              {t("nav.home")}
             </Link>
-            <Link to="/domains" className="text-foreground hover:text-primary transition-smooth">
-              {t('nav.domains')}
+            <Link
+              to="/domains"
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              {t("nav.domains")}
             </Link>
-            <Link to="/pricing" className="text-foreground hover:text-primary transition-smooth">
-              {t('nav.pricing')}
+            <Link
+              to="/pricing"
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              {t("nav.pricing")}
             </Link>
-            <Link to="/support" className="text-foreground hover:text-primary transition-smooth">
-              {t('nav.support')}
+            <Link
+              to="/support"
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              {t("nav.support")}
             </Link>
           </div>
 
@@ -50,10 +69,10 @@ export function Navbar() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setLanguage('en' as Language)}>
+                <DropdownMenuItem onClick={() => setLanguage("en" as Language)}>
                   English
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('ar' as Language)}>
+                <DropdownMenuItem onClick={() => setLanguage("ar" as Language)}>
                   العربية
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -68,10 +87,14 @@ export function Navbar() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setCurrency('EUR' as Currency)}>
+                <DropdownMenuItem
+                  onClick={() => setCurrency("EUR" as Currency)}
+                >
                   EUR (€)
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setCurrency('SYP' as Currency)}>
+                <DropdownMenuItem
+                  onClick={() => setCurrency("SYP" as Currency)}
+                >
                   SYP (ل.س)
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -81,9 +104,9 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             >
-              {theme === 'light' ? (
+              {theme === "light" ? (
                 <Moon className="w-4 h-4" />
               ) : (
                 <Sun className="w-4 h-4" />
