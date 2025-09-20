@@ -20,12 +20,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Link to="/" className="w-10 h-10 bg-gradient-luxury rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">SN</span>
-            </Link>
-            <Link to="/" className="text-xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
-              Sy-net
-            </Link>
+            <img src="/sy-netlogo.png" alt="Logo" className="h-22 w-24" />
           </div>
 
           {/* Navigation Links */}
