@@ -55,14 +55,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('synet-currency', curr);
   };
 
+  const convertPrice = (price: number): number => {
+    return currency === 'SYP' ? price * EUR_TO_SYP_RATE : price;
+  };
+
   const handleSetTheme = (newTheme: Theme) => {
     setTheme(newTheme);
     localStorage.setItem('synet-theme', newTheme);
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
-  const convertPrice = (price: number): number => {
-    return currency === 'SYP' ? price * EUR_TO_SYP_RATE : price;
   };
 
   const value: AppContextType = {
